@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: cove_staging
+    database: "{{ var('project_id', target.project) }}"
+    schema: cove_staging
+    tables:
+      - name: properties
+      - name: rooms
+      - name: tenancies
