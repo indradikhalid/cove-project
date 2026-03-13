@@ -1,0 +1,13 @@
+name: cove_dbt
+version: "1.0.0"
+
+profile: cove_dbt
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  cove_dbt:
+    marts:
+      +materialized: table
