@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fact_monthly_occupancy
+    description: Monthly occupancy rate per property. One row per property per month.
+    columns:
+      - name: property_id
+        description: Property identifier
+      - name: property_name
+        description: Property name
+      - name: month
+        description: First day of the month
+      - name: total_available_room_nights
+        description: Total room-nights available in the property for that month
+      - name: occupied_room_nights
+        description: Room-nights with an active tenancy
+      - name: occupancy_rate_pct
+        description: "Occupancy rate as percentage: occupied / available * 100"
